@@ -9,7 +9,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
                 Статус полученного ответа:
                 * `LETTER`  - ПИСЬМО
                 * `PARCEL`  - ПОСЫЛКА
-                * `SMALL_PACKAGE`  - МАЛЕНЬКАЯ ПОСЫЛКА
+                * `SMALL_PACKAGE`  - БАНДЕРОЛЬ
                 * `POSTCARD`  - ОТКРЫТКА"""
 )
 public enum PostType {
