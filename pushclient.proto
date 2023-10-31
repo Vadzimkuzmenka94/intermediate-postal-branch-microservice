@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "proto/shared/uuid.proto";
+
+option java_package = "ru.mgt.icp.push.contract.proto";
+option java_outer_classname = "TabPushesProto";
+option java_multiple_files = true;
+
+message TabPushes{
+  string tabId = 1;
+  map<string, Platform> tokenPlatform = 2;
+}
+
+enum Platform{
+  ANDROID = 0;
+  IOS = 1;
+}
