@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option java_package = "ru.mgt.icp.proto.shared";
+option java_outer_classname = "UuidProto";
+option java_multiple_files = true;
+option java_string_check_utf8 = true;
+
+message Uuid{
+  int64 mostSigBits = 1;
+  int64 leastSigBits = 2;
+}
